@@ -1,0 +1,15 @@
+api_platform:
+    title: Brorder API
+    description: API to order bread. It manages creation of products to sell, order to make and users that will access an admin.
+    version: 1.0.0
+    defaults:
+        stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']
+        pagination_client_items_per_page: true
+    swagger:
+        api_keys:
+            JWT:
+                name: Authorization
+                type: header
+    
